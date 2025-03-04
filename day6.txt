@@ -1,0 +1,35 @@
+Day 6.
+Today was my sixth day in surfboard payments. I discovered many new things and each one was very interesting and exciting. It made me curious and excited to learn new things today. Started the day with recalling the topic Problem Solving. 
+i)	Understand the problem
+ii)	List down the constraints
+iii)	Write down the operation
+iv)	Breaking down the problem
+v)	Solve the most constraint part
+vi)	Solving by operation satisfy the constraint
+Today I learned that breaking down the steps into smaller ones makes to solve the problem easier. Break down the problem until you solve it.
+Then moved to the topic proposition, the statements that are true or false. Logically they were the mathematical representation of the statements. It is described by Variable representation and connections.  For example we have a statements
+a)	My car is painted red 
+b)	 My car is park in the corner 
+The variable representations and connections are logical disjunction, logical conjunction and logical negation.  In logical disjunction, either one statement has to be true. [p^q]. But in logical conjunction, Both the statements must be true [p v q]. Then learnt about the conditional and bi-conditional statements.
+a)	You get an A in maths
+b)	You will get an Iphone
+If you get an A in maths, You will get an I phone. In in statement, he will get the I phone even if he didn’t get an A in maths. Here, the first statement need not to be compulsory. If the first statement is false and second statement is true, then the conditional class becomes true. 
+If and only if you get an A in maths, you will get an I phone. In this statement Here the chances are like 50% for each statement. By using the venn diagram we can easily understand this. If and only if he gets an A in maths he will get an I phone. Here the statement one is false but the statement two is false then the bi- conditional becomes false. Here the condition should be true. 
+ In afternoon session, we assigned mentors for each one. My mentor is Mr. Praveen Joshua, Software engineer in surfboard payments. He explained me how the front-end works, the frameworks that he is using is Angular. 
+I learned that frameworks are the systems that supports to building something. A framework is a pre-built toolbox that helps the developers build software faster and easier. Angular framework is developed by google. It is component- based, the application will be divided into small parts, it will easier for developing. It uses the Typescript which is a more structured and a version of Javascript and it also provides security for the application. By using typescript we can easily deduct errors in run-time. It provides routing, that allows navigation between different pages without reloading the whole site. 
+I learned about Tailwind CSS, it is a massive collection of tiny CSS into utility classes for quickly building applications. CSS is hard for designing and having same name for classes is difficult. Frameworks like bootstrap address this challenge by creating styles for high- level components like drop-downs, buttons etc. Tailwind takes a functional approach by using utility classes that can be composed together to built components. We combine utility classes like flex to make it a flexbox, p-4 for padding, bg-green, shadow for background and shadow effects etc. Every utility can be applied conditionally. For example, Border radius can be rounded-lg , sm, md, xs, xl, also we can have specific values for it rounded-10px. It gives us freedom over our creativity compared to other CSS frameworks. I started learning about Typo grapy in Tailwind CSS. 
+i)	Font-family – utility for controlling font family of an element. 
+Font-sans, font- serif, font- mono, font-[<values>].
+ii)	Font- size – utility for controlling font size of an element 
+text-xs, text-sm, text-lg, text- base, text-xl, text-2xl, text-3xl, text-4xl, text-5xl, text-6xl, etc
+iii)	Font- smoothing – utility class for controlling the font smoothing of an element.
+Antialiased, subpixel- antialiased 
+iv)	Font- style – utilities for controlling the style of the text.
+Italic, non-italic.
+v)	Font- weight- utilities for controlling the font weight of an element. 
+Font-thin, font- extralight, font- light, font- normal, font- medium, font- semibold, font-bold, font- extrabold, font- black, font-[value]
+vi)	Font- variant- numerics – utilities for controlling the variant of numbers.
+Normal-nums, ordinal, slashed-zero, lining nums, oldstyle-nums, proportional nums,  tabular- nums, diagonal-fractions, stacked- fractions. 
+vii)	Letter-spacing- utility for controlling the letter spacing of an element.
+Tracking-tighter, tracking-tight, tracking-normal, tracking- wide, tracking- wider, tracking-widest.
+Instead of teaching everything, they made us actively do it by ourself. This hands-on practice helped me to understand new concepts better and learn how to solve problem independently. It was a more effective way of learning, as it encouraged problem-solving, and strong understanding of the subject. There is a lot more to learn, I should be consistent in learning everything. 
