@@ -1,0 +1,15 @@
+.div1 {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .div2 {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    color: #333;
+  }

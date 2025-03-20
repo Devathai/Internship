@@ -28,7 +28,5 @@ export class AppComponent implements OnInit {
       this.datas=this.output.getWeather(this.city);
 
   }
-  fetchWeather(){
-   
-  }
+  
 }

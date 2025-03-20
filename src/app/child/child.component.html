@@ -1,4 +1,4 @@
-<p routerLink="signal">child works!</p>
+<p routerLink="signal"></p>
 
 <app-signal></app-signal>
 <!-- <div>
@@ -8,14 +8,12 @@
 <br>
 <br>
 <button (click)="stop()">Stop</button> -->
-<!-- <div *ngIf="value | async as user" >
-    <div @for (datas of values; track datas.id)>
-    <p>id: {{ user.id }}</p>
-    <p>title {{ user.title }}</p>
-    <p>body: {{user.body }}</p>
-    <p>userId:{{user.userId}}</p>
-  </div>
-</div> -->
-@if(){
-    
-}
+
+<div class="div1" *ngIf="value | async as user">
+ <div class="div2" *ngFor="let members of user">
+    <p>id: {{ members.id }}</p>
+    <p>title:{{ members.title }}</p>
+    <p>body: {{members.body }}</p>
+    <p>userId:{{members.userId}}</p>
+</div>
+</div>
