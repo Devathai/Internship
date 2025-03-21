@@ -1,0 +1,82 @@
+Algorithms. 
+1)	Write the algorithm to multiply two 4 digit numbers. Assume the computer knows nothing about multiplication and only about addition.
+Algorithm:
+1)	Start.
+2)	Get input for two numbers using a and b
+3)	Set the result variable to zero.
+4)	Loop it to B times.
+5)	Add the result value to A each time
+6)	Return the result.
+7)	Stop.
+
+2)	How will you teach your computer to find the GCD(Greatest common Divisor of 2 non-prime numbers)?.
+Algorithm
+1)	Start.
+2)	Get input for two numbers  a and b.
+3)	Check if b is not equal to 0.
+	Set temp=a%b.
+	Set a=b.
+	Set b=temp
+4)	Repeat unit b becomes 0.
+5)	Return the value a.
+6)	Stop. 
+
+
+3)	Your computer has received a message in Morse Code. However instead of the .s ands, its replaced with and Everything else seems to be in the same structure as standard Morse code. How will you program your computer to this decrypt message. Eg: ;::;;; ;; ;; ;;;;;:::
+Algorithm:
+1)	Start.
+2)	Get the input for string containing  ; and : 
+3)	Replace   ;  with . 
+Replace   : with – 
+4)	Split the replaced morse code into words and letter (.split()).
+5)	Decode each morse code symbol using morse dictionary.
+6)	Join the letters and return the decoded meaasge
+7)	Stop.
+
+4)	Your computer needs to sort 5000 degree certificates from SRM University in reverse alphabetical order. How will you teach your computer to do this.
+Algorithm:
+1)	Start.
+2)	Get the list of 5000 names in array type.
+3)	Sort them in descending alphabet order (.sort) and compare them using (.localeCompare())
+4)	Return the sorted list.
+5)	Stop.
+
+   5 ) 1: Start
+ 2: Set Name <- ‘Internship’
+ 3: Print Name 4: Add ‘2025 ‘ to the beginning of Name
+ 5: Print Name
+ 6: Goto Step 2 and continue till you print Name(Internship) 5 times
+ 7: Stop .
+Algorithm:
+1)	Start.
+2)	Set name as ‘Internship’.
+3)	Set for count = 0 to 4, repeat step 4 and 5.
+4)	Print name.
+5)	Name = “2025” + name.
+6)	Stop.
+
+1: Start
+2: Set numberToCheck <- 1001001001001, 12345567891, 559922932941
+3: Remove the last digit
+5: From the last digit multiply each digit by 2
+6: Take each of the products derived and add them together
+7: Reduce the number until you get a single digit
+8: Check if the calculated value is equal to the last digit from Step 3
+9: Decide if the number is valid (If the value is equal, the number is valid.
+Otherwise it is invalid)
+10: Print the validity
+11: Stop
+    Algorithm: 
+1.	Start.
+2.	Get the input to be validated.
+3.	Extract the last digit using number %10 as check digit.
+4.	Remove the last digit using Math.floor(number / 10).
+5.	Initialize sum=0 and isSecond=true.
+6.	While the number is not 0, repeat step 3 and 4.
+7.	If the isSecond is true, multiply the digit bt 2
+8.	If the result is greater than9, subtract 9.
+9.	Add the processed value to sum.
+10.	While sum is greater than 9 reduce to single digit.
+11.	Set newSum=0;
+12.	Extract and add each digit of sum to newSum.
+13.	Replace sum with newSum.
