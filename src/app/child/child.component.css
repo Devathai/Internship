@@ -13,3 +13,13 @@
   h2 {
     color: #333;
   }
+  .button1{
+    color:rgb(16, 18, 18); 
+    width: 200px;
+    margin: 20px;
+  }
+  .button2{
+    color: cadetblue;
+    width: 150px;
+    margin: 20px;
+  }

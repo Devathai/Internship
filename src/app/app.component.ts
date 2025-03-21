@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet,CommonModule,ChildComponent],
+  imports: [RouterOutlet,CommonModule],
   // providers:[ActivatedRoute],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

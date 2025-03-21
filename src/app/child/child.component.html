@@ -8,9 +8,17 @@
 <br>
 <br>
 <button (click)="stop()">Stop</button> -->
+<button class="button2" (click)="fetchData()">fetch it</button>
 
-<div class="div1" *ngIf="value | async as user">
- <div class="div2" *ngFor="let members of user">
+ <button class="button1" (click)="displayPost()">DisplayPost</button> 
+<div *ngIf="post | async as newUser">
+    <p>id:{{newUser.id}}</p>
+    <p>title:{{newUser.title}}</p>
+    <p>body:{{newUser.body}}</p>
+    <p>userId:{{newUser.userId}}</p>
+</div> 
+<div class="div1" *ngIf="value | async as user" >
+<div class ="div2" *ngFor="let members of user">
     <p>id: {{ members.id }}</p>
     <p>title:{{ members.title }}</p>
     <p>body: {{members.body }}</p>
