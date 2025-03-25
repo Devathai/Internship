@@ -7,26 +7,28 @@ import { ChildComponent } from './child/child.component';
 import { CommonModule } from '@angular/common';
 import { SignalComponent } from './signal/signal.component';
 import { Observable } from 'rxjs';
+import { FormsComponent } from './forms/forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet,CommonModule],
-  // providers:[ActivatedRoute],
+  imports: [RouterOutlet,CommonModule,FormsComponent,ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent implements OnInit {
-  datas!:Observable<any>
-  city:string='sweden';
+export class AppComponent //implements OnInit 
+{
+  // datas!:Observable<any>
+  // city:string='sweden';
 
-  constructor(private output: ServiceService) {}
+  // constructor(private output: ServiceService) {}
   
 
-    ngOnInit() {
-      this.datas=this.output.getWeather(this.city);
+  //   ngOnInit() {
+  //     this.datas=this.output.getWeather(this.city);
 
-  }
+  // }
   
 }

@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { ChildComponent } from './child/child.component';
 import { SignalComponent } from './signal/signal.component';
 import { ServiceService } from './service.service';
+import { FormsComponent } from './forms/forms.component';
 
 export const routes: Routes = [{
     path: '',
@@ -16,8 +17,12 @@ export const routes: Routes = [{
     component: SignalComponent
 
 },
+{
+   path:'forms', 
+   component: FormsComponent
+},
 
-{ path: '',   redirectTo: 'child', pathMatch: 'full' },
+{ path: '',   redirectTo: 'forms', pathMatch: 'full' },
 //{ path: '**', component: PageNotFoundComponent },
 ];
 
