@@ -1,0 +1,15 @@
+.Myself {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #ffe6e6;
+  }
+  .header {
+    font-weight: bold;
+    color: red;
+  }
+  .footer {
+    margin-top: 10px;
+    text-align: right;
+  }

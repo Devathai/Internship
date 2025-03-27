@@ -49,7 +49,7 @@ export class FormsComponent {
   // }
   
  
-  private formbuilder= inject(FormBuilder);
+ // private formbuilder= inject(FormBuilder);
 // inputForm= this.formBuilder.group({
 //   fullName:['',[Validators.required]],
 //   email:['',[Validators.required, Validators.email]],
@@ -73,27 +73,27 @@ export class FormsComponent {
 //     console.log('Form is invalid');
 //   }
 // }
- inputForm=this.formbuilder.group({
-  name:['',Validators.required],
-  phno:['',Validators.maxLength(10)],
-  address:this.formbuilder.group({
-    building:[''],
-    street:[''],
-    city:[''],
-    zipcode:['',]
-  }),
-  aliases:this.formbuilder.array([]),
-});
+//  inputForm=this.formbuilder.group({
+//   name:['',Validators.required],
+//   phno:['',Validators.maxLength(10)],
+//   address:this.formbuilder.group({
+//     building:[''],
+//     street:[''],
+//     city:[''],
+//     zipcode:['',]
+//   }),
+//   aliases:this.formbuilder.array([]),
+// });
 
-get aliases(): FormArray{
-  return this.inputForm.get('aliases') as FormArray;
-}
-add(){
-  this.aliases.push(this.formbuilder.control(''))
-}
-getValues(){
-  return this.inputForm.value;
-}
-}
+// get aliases(): FormArray{
+//   return this.inputForm.get('aliases') as FormArray;
+// }
+// add(){
+//   this.aliases.push(this.formbuilder.control(''))
+// }
+// getValues(){
+//   return this.inputForm.value;
+// }
+ }
 
 

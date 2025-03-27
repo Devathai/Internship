@@ -9,12 +9,15 @@ import { SignalComponent } from './signal/signal.component';
 import { Observable } from 'rxjs';
 import { FormsComponent } from './forms/forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ApploginComponent } from './applogin/applogin.component';
+import { TemplateformComponent } from './templateform/templateform.component';
+import{ContentComponent} from './content/content.component'
 
 
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet,CommonModule,FormsComponent,ReactiveFormsModule],
+  imports: [RouterOutlet,CommonModule,FormsComponent,ReactiveFormsModule,ApploginComponent,TemplateformComponent,ContentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
