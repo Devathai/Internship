@@ -1,0 +1,30 @@
+#### Day 26.
+#### Started the day with the task to call the API and set interface for it. From the fetched data I have to create a product lists like amazon using Tailwind CSS. First to set up the tailwind in our application. I installed the tailwind using the command for CLI. At first I downloaded the version of 4.0. Then I did the step by step process given for installation. But I faced issues in that like npm error could not determine executable to run And then I tried creating the configuration manually also as told as another option, still it didn’t work. Then I asked anna to help me fix this issue and he told the version of 4.0 have some issues and asked me to installed the version of 3.4.17. Then I reinstalled It again and it works. 
+#### Tailwind is a tool that is used to design website quickly. It also very useful for creating responsive layouts that works on all screens instead of writing a long CSS files. It has built – in classes for colors, spacing, fonts and layout and it makes easer for customizing the templates. Flex and grid also us arrange the contents in rows and columns.
+#### The difference between the tailwind CSS and normal CSS is how the styles are applied. I normal CSS we have a separate styles in CSS file and we aplly the styles using class name or Id name. For example, creating a .button class and we define the style properties like color, padding, margin etc. But In tailwind CSS we don’t need a separate file, instead we use predefined utility classes directly in HTML, like bg-blue-500 p-4 text-white to style the elements. 
+#### First I have created the rough layout of how the data should be placed in paper. Then I learned about grid. Gird is to create a layouts that helps arrange the content in rows and columns. We use the grid class to define the container as a grid and grid-cols-* to set the number of columns. The gap-* class add space between the items. 
+```js
+<div class="grid grid-cols-2 gap-6">
+```
+#### Here I have created a div and define the grid which understand that’s the container uses the grid class and grid-cols-2 creates two columns. Gap-6 creates the gap between the two layouts it creates a gap of 24px. 
+#### We can also control responsiveness using md:grid-cols-2 , is a utility that sets the numbers of columns in grid when the viewport with is medium. The screen width of medium is 768px . It sets the grid to have two columns. If I apply this to an element, it means that on medium and more than that the container will have two columns. Similarly we can use utility class for small and large break points to control the grid layout at different size. sm:grid-cols-2 class applies a 2-column grid layout whrn the view port width is 640px or more. The lg:grid-cols-3 class applies a 3 column grid layout when the view port width is 1024px or more. This helps us give full flexibility to control the grid layout in multiple screens. 
+#### The width class is control the width of an element using w-40. If thw width is set to 40 then the size is in 160px, because it is based on the pre-defined scaling, it will be derived froma multiple of 4px. We can give the custom width like w-[400px], now the width will set to 400px. Similarly for height, the height class is to control the height of an element using h-20. We create custom height using h-[750px] , now the height is set to 750px. We can give height and width in percentage, screen and also set maximum and minimum. 
+#### Padding is used to control the space between the element and the container. We can give custom value by p-[20px]. We can give the padding on all four or for anyone side alone, to control those we use pt, pb, pl, pr controls the padding on top, bottom, left and right. 
+#### Border is used to give border for the container using border utilities. For example, border border-gray-500 adds a 1px gray border. You can control thickness (border-2 to border-8), color (border-red-500), and style (border-dashed). Use rounded for curved corners, like rounded-lg for a good look. 
+#### overflow controls how content behaves when it exceeds the paragraph’s size. Use overflow-hidden to hide extra text, overflow-scroll to add scrolling, and overflow-auto for scrolling only when needed. For example, <p class="overflow-hidden">[text-content]</p>, here the text will be hidden if it exceed the paragraph’s size and if I give scroll it will add scrolling.
+#### I attend the session with Koushik anna. I learned about scope of a variable. It decides where all the variables can be accessed and used in a program. Then about execution stack, stack is used to store the data one top of another. Once we run the program, the main function will be called first like it is the starting point. When the program is called, It will store the data that is on the main function first, If the have any functions like add() will be stacked one top of another. Once the function is executed all the variables and statement will be removed from the stack. Then executing all the function in the stack it will be removed and at last it will be empty. Then only we can understand that the program is executed successfully. Then he gave more examples that help understand the stack and how the re- assigning the variable is done. For example, 
+```js
+String getdata() {
+    print(a);  
+    String c = "wednesday";
+    void fetchdata() {
+      print(b);  
+      c = "thursday"; 
+    }
+   fetchdata(); 
+    return c;
+  }
+```
+#### In this the value of c is initially Wednesday, after that in fetchdata() the the value of c is modified into Thursday and the variable c contains Thursday. when the getdata() is called the return c will return the Thursday. If I give string c =”Thursday” inside the fetchdata() a new c will be created inside the fetchdata(). It will not affect the change in the value of c here. 
+#### Today I learned Tailwind CSS for responsive layouts, grid systems, and variable scope in programming through hands-on practice, which helped to improve my skill development and it was a productive day.
+#### Thank you.
