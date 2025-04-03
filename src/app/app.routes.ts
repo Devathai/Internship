@@ -7,6 +7,11 @@ import { ApploginComponent } from './applogin/applogin.component';
 import { TemplateformComponent } from './templateform/templateform.component';
 import { contentChild } from '@angular/core';
 import { ContentComponent } from './content/content.component';
+import { InterfaceComponent } from './interface/interface.component';
+import { InterfacesComponent } from './interfaces/interfaces.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ExampleComponent } from './example/example.component';
+import { NewsApiComponent } from './news-api/news-api.component';
 
 export const routes: Routes = [{
     path: '',
@@ -37,7 +42,26 @@ export const routes: Routes = [{
     path:'content',
     component:ContentComponent
 },
-
+{
+    path:'interface',
+    component:InterfaceComponent
+},
+{
+    path:'interfaces',
+    component:InterfacesComponent
+},
+{
+    path:'productList',
+    component:ProductListComponent
+},
+{
+    path:'example',
+    component:ExampleComponent
+},
+{
+    path:'newsApi',
+    component:NewsApiComponent
+},
 { path: '',   redirectTo: 'forms', pathMatch: 'full' },
 //{ path: '**', component: PageNotFoundComponent },
 ];

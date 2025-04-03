@@ -12,12 +12,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ApploginComponent } from './applogin/applogin.component';
 import { TemplateformComponent } from './templateform/templateform.component';
 import{ContentComponent} from './content/content.component'
+import { InterfaceComponent } from './interface/interface.component';
+import { InterfacesComponent } from './interfaces/interfaces.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ExampleComponent } from './example/example.component';
+import { NewsApiComponent } from './news-api/news-api.component';
 
 
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet,CommonModule,FormsComponent,ReactiveFormsModule,ApploginComponent,TemplateformComponent,ContentComponent],
+  imports: [RouterOutlet,CommonModule,FormsComponent,ReactiveFormsModule,ApploginComponent,TemplateformComponent,ContentComponent,InterfaceComponent,InterfacesComponent,ProductListComponent,ExampleComponent,NewsApiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -34,4 +39,6 @@ export class AppComponent //implements OnInit
 
   // }
   
+  
 }
+

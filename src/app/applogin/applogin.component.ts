@@ -42,13 +42,13 @@ export class ApploginComponent {
 //   arr.unshift(a);
 //  }
 //  }
-fb = inject(FormBuilder)
-// emailControl= new FormControl<string|null>('dev1325@gmail.com',{nonNullable:true});
-emailControl= new FormControl<string | null>(null)
-reset(){
-  this.emailControl.reset('');
-}
-setEmail(){
-  this.emailControl.setValue('dev1@gmail.com');
-}
+// fb = inject(FormBuilder)
+// // emailControl= new FormControl<string|null>('dev1325@gmail.com',{nonNullable:true});
+// emailControl= new FormControl<string | null>(null)
+// reset(){
+//   this.emailControl.reset('');
+// }
+// setEmail(){
+//   this.emailControl.setValue('dev1@gmail.com');
+// }
 }

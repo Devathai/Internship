@@ -1,0 +1,34 @@
+<!-- <pre>
+    {{user.name}}
+    {{user.id}}
+    {{user.email}}
+    {{user.age}}
+<pre>
+    <form [formGroup]="Login" (ngSubmit)="submit()">
+        <label>Username:</label>
+        <input type="text" formControlName="username" /><br>
+      
+        <label>Email:</label>
+        <input type="email" formControlName="email" /><br>
+      
+        <label>Age:</label>
+        <input type="number" formControlName="age" /><br>
+      
+        <button type="submit">Submit</button>
+      </form>
+
+<div>
+    <pre *ngFor="let student of students">
+        {{student.studentId}}
+        {{student.studentName}}
+        {{student.department}}
+    </pre>
+</div>
+<form [formGroup]="paymentForm">
+    <label *ngFor="let method of payment">
+    <input type="radio" [value]="method" formControlName="payments">
+    {{method}}</label>
+    <div>
+        <button (click)="submitForm()">Submit</button>
+    </div>
+</form> -->
