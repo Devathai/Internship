@@ -8,7 +8,5 @@
 1. Syntax error – The code incorrect code [ if(i==0{ ….. } ] it shows as syntax error.
 2. Reference error – It will throw an error when we try to use a variable that hasn’t been declared.
 3. Type error – It occurs when we given the wrong type of data.
-4. 404 – Not found means that the resource does not exits
-5. 401 – Unauthorized means that no or wrong authentication token.
-Today I learned how MCP servers help AI tools like Claude connect to data safely using standard input and output. I also understood how errors and exceptions work in code, and how to handle them using try-catch blocks without crashing programs.
+#### Today I learned how MCP servers help AI tools like Claude connect to data safely using standard input and output. I also understood how errors and exceptions work in code, and how to handle them using try-catch blocks without crashing programs.
 #### Thank You.
