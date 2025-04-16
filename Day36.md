@@ -1,4 +1,4 @@
-### Day 37.
+### Day 36.
 #### Today I learned about how to create signup and login page using JWT. We need to install json web token ad bcryptjs to create a token. First we create a route to app that handles user sign- ups when the POST request is sent to /signup. We have request body which contains username and password and extract them. Then we need to check if the user already exits or not. If the user already exists, send back the response with 400  status which means a bad request along with the message the user already exists. If new use, it hashes the password using bcrypt , which means the password will not be plain text. 
 ```js
 const hashedPassword = await bcrypt.hash(password, 10);
