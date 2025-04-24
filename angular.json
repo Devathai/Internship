@@ -24,10 +24,20 @@
               {
                 "glob": "**/*",
                 "input": "public"
+<<<<<<< HEAD
               }
             ],
             "styles": [
               "src/styles.css"
+=======
+                
+              },
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/output.css"
+>>>>>>> 080ce7f8a27d155bb5461e4fc3ffe0a5c05afce5
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -90,7 +100,12 @@
               }
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.css",
+              "src/output.css"
+>>>>>>> 080ce7f8a27d155bb5461e4fc3ffe0a5c05afce5
             ],
             "scripts": []
           }
@@ -99,6 +114,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": false
+=======
+    "analytics": "db129787-b692-47ee-b293-a437e6158245"
+>>>>>>> 080ce7f8a27d155bb5461e4fc3ffe0a5c05afce5
   }
 }

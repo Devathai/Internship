@@ -1,0 +1,112 @@
+
+<!-- <label>Enter something</label>
+<input type="text" [formControl]="favoriteColorControl">
+<p>Fav Color: {{favoriteColorControl.value}}</p>
+<button (click)="changecolor()">Change color</button>
+<br>
+<p>Favorite color: <input type="text" [(ngModel)]="favoriteColor"></p>
+<p>ngModel favolor is {{favoriteColor}}</p>
+<button (click)="updatecolor()">update</button> -->
+
+<!-- <form [formGroup]=" profileForm">
+    <div><label for="first-name">FirstName:</label></div>
+    <div><input id="first-name"type="text" formControlName="firstName"></div>
+    <div><label for="last-name">LastName:</label></div>
+    <div><input id="last-name"type="text" formControlName="lastName"></div>
+    <div formGroupName="address">
+    <div><label for="street">Street:</label></div>
+    <div><input id="street"type="text" formControlName="street"></div>
+
+    <div><label for="city">City:</label></div>
+    <div><input id="city"type="text" formControlName="city"></div>
+
+    <div><label for="state">State</label></div>
+    <div><input id="state"type="text" formControlName="state"></div>               
+    </div>
+    <button type="button" (click)="updateProfile()">Submit</button>
+</form> -->
+<!-- <form [formGroup]="inputForm" (ngSubmit)="onSubmit()">
+    <div><label for="fullname">FullName:</label></div>
+    <div><input id="fullname"type="text" formControlName="fullName"></div>           
+    <div *ngIf="inputForm.get('fullName')?.invalid&& inputForm.get('fullName')?.touched">
+        <p style="color: red;">Name is required</p>
+    </div>
+
+    <div><label for="email">Email Id:</label></div>
+    <div><input id="email"type="email" formControlName="email"></div>
+    <div *ngIf="inputForm.get('email')?.invalid&& inputForm.get('email')?.touched"> --> <!-- It checks whather the given validation are fullfilled and touched, it checks if the user has interacted with the field and then clicked away-->
+        <!-- <p style="color: red;" *ngIf="inputForm.get('email')?.errors?.['required']">Email is required</p> it retrives the validation for the email from the form contol and checks if this has any errors and thorws error msg if it has  -->
+        <!-- <p style="color: red;" *ngIf="inputForm.get('email')?.errors?.['email']">Invalid email Id</p>
+      </div>
+    <div formGroupName="passwords">
+        <div><label for="password">Password:</label></div>
+        <div><input id="password" type="password" formControlName="password"></div>
+        <div *ngIf="inputForm.get('passwords.password')?.invalid&&inputForm.get('passwords.password')?.touched">
+            <p style="color: red;" *ngIf="inputForm.get('passwords.password')?.errors?.['required']">password is required</p>
+            <p style="color: red;" *ngIf="inputForm.get('passwords.password')?.errors?.['minlength']">Password should be minimum 6 characters</p>  
+        </div>
+
+        <div><label for="confirmPassword">Confirm Password:</label></div>
+        <div><input id="confirmPassword" type="password" formControlName="confirmPassword"></div>
+        <div *ngIf="inputForm.get('passwords.confirmPassword')?.invalid&&inputForm.get('passwords.confirmPassword')?.touched">
+            <p style="color: red;" *ngIf="inputForm.get('passwords.confirmPassword')?.errors?.['required']">Confirm password is required</p></div>
+            <div><p style="color: red;" *ngIf="inputForm.get('passwords')?.errors?.['Mismatch'] && inputForm.get('passwords.confirmPassword')?.touched">Password is Mismatched</p>  
+        </div>
+    </div>
+    <div><label for="gender">Gender:</label></div>
+    <div><select id="gender" formControlName="gender">
+        <option value="">--Select--</option> -->
+        <!-- <option *ngFor="let gender of genderOptions" [value]="gender">{{gender}}</option> ngFor is to get the values for dropdown from the gender option i have declared it in the component. -->
+    <!-- </select>
+</div>
+    <div>
+    <label for="termsandCondition">
+    <input id="termsandCondition" type="checkbox" formControlName="termsandCondition">
+    I agree to the Terms and Conditions </label></div>
+
+<button type="submit" >Submit</button>   
+</form> -->
+
+<!-- <form [formGroup]="inputForm">
+             <div><label for="name">Name:</label></div>
+             <div><input id="name"type="text" formControlName="name"></div>           
+             <div *ngIf="inputForm.get('name')?.invalid&& inputForm.get('name')?.touched">
+             <p style="color: red;">Name is required</p>
+             </div>
+             <div><label for="phno">Phone number:</label></div>
+             <div><input id="phno"type="text" formControlName="phno"></div>           
+             <div *ngIf="inputForm.get('phno')?.invalid&& inputForm.get('phno')?.touched">
+             <p style="color: red;" *ngIf="inputForm.get('phno')?.errors?.['maxlength']">Phone number should not exceed 10 digits.</p>   
+             </div>
+    <div formGroupName="address">
+             <p>Address</p>
+        
+            <div><label for="building">Building:</label></div>
+            <div><input id="building"type="text" formControlName="building"></div>           
+        
+            <div><label for="street">Street:</label></div>
+            <div><input id="street"type="text" formControlName="street"></div>           
+        
+            <div><label for="city">City:</label></div>
+            <div><input id="city"type="text" formControlName="city"></div>           
+            
+            <div><label for="zipcode">Zipcode:</label></div>
+            <div><input id="zipcode"type="text" formControlName="zipcode"></div>           
+            
+    </div>
+             <div formArrayName="aliases">
+                <button (click)="add()" type="button">add</button>
+                <div *ngFor="let alias of aliases.controls; let index = index">
+                    <div><label>{{ index }}</label></div>
+                    <div><input type="text" id="alias-{{ index }}" [formControlName]="index"></div>
+                </div>
+                </div>
+    
+    <div>
+       <button type="Submit">Submit</button>
+    </div>
+    <div>
+        <p>{{getValues() | json}}</p>
+    </div>
+
+    </form> -->
