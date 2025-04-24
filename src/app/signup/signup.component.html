@@ -1,0 +1,14 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSignUp()" class="max-w-md mx-auto mt-12 space-y-4">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" placeholder="email" class="input">
+    </div>
+    <div class="form-group">
+        <label for="password">password</label>
+        <input id="password" formControlName="password" type="password" placeholder="Enter your Password" class="input">
+        <div *ngIf="signupForm.get('password')?.invalid&& signupForm.get('password')?.touched">
+            <p style="color: red;" *ngIf="signupForm.get('password')?.errors?.['required']">password is required</p>
+        </div> 
+    </div>
+    <button type='submit'(click)="navigateTo('/login')" class="px-6 py-3 font-medium rounded-lg bg-blue-500 hover:bg-blue-600">Sign Up</button>
+</form>

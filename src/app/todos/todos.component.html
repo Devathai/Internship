@@ -1,0 +1,15 @@
+<div class="max-w-2xl mx-auto mt-10">
+    <form [formGroup]="todoForm" (ngSubmit)="AddTodo()" class="space-x-2">
+        <input formControlName="text" placeholder="Enter a new todo..." class="input w-2/3">
+        <button type="submit" class="btn btntodo">Add</button>
+    </form>
+    <ul class="mt-6 space-y-2">
+        <li *ngFor="let todo of todos" class="flex justify-between items-center p-3 bg-gray rounder">
+            <div>
+                <p class="font-medium">Todo:{{todo.text}}</p>
+                <p class="text-sm"> Difficulty: {{todo.category}}</p>
+            </div>
+            <button (click)="deleteTodo(todo.id)" class="btn btn-delete">Delete</button>
+        </li>
+    </ul>
+</div>
